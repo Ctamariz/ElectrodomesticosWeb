@@ -18,7 +18,7 @@ namespace ElectrodomesticosWeb.Models
         [Required(ErrorMessage = "Es requerido ingresar el número de tarjeta")]
         [DataType(DataType.CreditCard)]//valida que se ingrese un número de tarjeta
         public string NumTarjeta { get; set; }
-        [Required(ErrorMessage = "Es requerido ingresar la dirección")]
+        [Required(ErrorMessage = "Es requerido ingresar la dirección para guardar")]
         public string Direccion { get; set; }
         [Required(ErrorMessage = "Es requerido ingresar el número de teléfono")]
         public string Telefono { get; set; }

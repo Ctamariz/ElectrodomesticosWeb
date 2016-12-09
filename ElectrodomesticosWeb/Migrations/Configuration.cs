@@ -5,14 +5,14 @@ namespace ElectrodomesticosWeb.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ElectrodomesticosWeb.DAL.ElectrodomesticosWebContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<ElectrodomesticosWeb.Models.ApplicationDbContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(ElectrodomesticosWeb.DAL.ElectrodomesticosWebContext context)
+        protected override void Seed(ElectrodomesticosWeb.Models.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

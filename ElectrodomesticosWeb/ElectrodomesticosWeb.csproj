@@ -215,6 +215,10 @@
     <Compile Include="Migrations\201612051937002_llaveForanea.Designer.cs">
       <DependentUpon>201612051937002_llaveForanea.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612090704115_addMigrationToCompraTest.cs" />
+    <Compile Include="Migrations\201612090704115_addMigrationToCompraTest.Designer.cs">
+      <DependentUpon>201612090704115_addMigrationToCompraTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Categoria.cs" />
@@ -256,7 +260,9 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\Slider.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -337,6 +343,12 @@
     <EmbeddedResource Include="Migrations\201612051937002_llaveForanea.resx">
       <DependentUpon>201612051937002_llaveForanea.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612090704115_addMigrationToCompraTest.resx">
+      <DependentUpon>201612090704115_addMigrationToCompraTest.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

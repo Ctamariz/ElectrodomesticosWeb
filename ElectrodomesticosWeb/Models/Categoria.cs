@@ -11,7 +11,7 @@ namespace ElectrodomesticosWeb.Models
     {
 
         public int Id { get; set; }
-        [DisplayName("Nombre de la categoria obligatorio")]
+        [DisplayName("Nombre de la categoria")]
         [Required]
         public string Nombre { get; set; }
         public virtual ICollection<Producto> Productos { get; set; }
